@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 import '../component/itemNumber.dart';
@@ -7,17 +6,17 @@ import '../models/numbers.dart';
 class NumberPage extends StatelessWidget {
   NumberPage({super.key});
  //Numbers one=Numbers(image: 'assets/images/numbers/number_one.png', JBName: 'ichi', enName: 'one');
-  List<Numbers> number=[
-    Numbers(image: 'assets/images/numbers/number_one.png', JBName: 'ichi', enName: 'one'),
-    Numbers(image: 'assets/images/numbers/number_two.png', JBName: 'ni', enName: 'Two'),
-    Numbers(image: 'assets/images/numbers/number_three.png', JBName: 'san', enName: 'Three'),
-    Numbers(image: 'assets/images/numbers/number_four.png', JBName: 'yon', enName: 'Four'),
-    Numbers(image: 'assets/images/numbers/number_five.png', JBName: 'go', enName: 'Five'),
-    Numbers(image: 'assets/images/numbers/number_six.png', JBName: 'roku', enName: 'Six'),
-    Numbers(image: 'assets/images/numbers/number_seven.png', JBName: 'nana', enName: 'Seven'),
-    Numbers(image: 'assets/images/numbers/number_eight.png', JBName: 'hachi', enName: 'Eight'),
-    Numbers(image: 'assets/images/numbers/number_nine.png', JBName: 'kyuu', enName: 'nine'),
-    Numbers(image: 'assets/images/numbers/number_ten.png', JBName: 'juu', enName: 'Ten'),
+ final  List<Numbers> number=[
+    Numbers(image: 'assets/images/numbers/number_one.png', JBName: 'ichi', enName: 'one',sound: "sounds/numbers/number_one_sound.mp3"),
+    Numbers(image: 'assets/images/numbers/number_two.png', JBName: 'ni', enName: 'Two',sound: "sounds/numbers/number_two_sound.mp3"),
+    Numbers(image: 'assets/images/numbers/number_three.png', JBName: 'san', enName: 'Three',sound: "sounds/numbers/number_three_sound.mp3"),
+    Numbers(image: 'assets/images/numbers/number_four.png', JBName: 'yon', enName: 'Four',sound: "sounds/numbers/number_four_sound.mp3"),
+    Numbers(image: 'assets/images/numbers/number_five.png', JBName: 'go', enName: 'Five',sound: "sounds/numbers/number_five_sound.mp3"),
+    Numbers(image: 'assets/images/numbers/number_six.png', JBName: 'roku', enName: 'Six',sound: "sounds/numbers/number_six_sound.mp3"),
+    Numbers(image: 'assets/images/numbers/number_seven.png', JBName: 'nana', enName: 'Seven',sound: "sounds/numbers/number_seven_sound.mp3"),
+    Numbers(image: 'assets/images/numbers/number_eight.png', JBName: 'hachi', enName: 'Eight',sound: "sounds/numbers/number_eight_sound.mp3"),
+    Numbers(image: 'assets/images/numbers/number_nine.png', JBName: 'kyuu', enName: 'nine',sound: "sounds/numbers/number_nine_sound.mp3"),
+    Numbers(image: 'assets/images/numbers/number_ten.png', JBName: 'juu', enName: 'Ten',sound: "sounds/numbers/number_ten_sound.mp3"),
 
   ];
   @override
@@ -25,7 +24,7 @@ class NumberPage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.brown,
-        title: Text("Number",style: TextStyle(
+        title: const Text("Number",style: TextStyle(
           color: Colors.white
         ),),
 

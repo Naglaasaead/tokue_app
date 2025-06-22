@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 import '../component/catogery_item.dart';
@@ -12,7 +11,7 @@ class Home extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.brown,
-        title: Text("Tokue",style: TextStyle(
+        title: const Text("Tokue",style: TextStyle(
           color: Colors.white
         ),),
       ),
